@@ -5,20 +5,20 @@
 class Cone < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.12"
+  version "0.0.13"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/cone/releases/download/v0.0.12/cone-v0.0.12-darwin-amd64.zip"
-      sha256 "0f38b6cd55b9eca405cd3f5dd110413497f1efc77cfb732ba7431d1e5abc5ad4"
+      url "https://github.com/ConductorOne/cone/releases/download/v0.0.13/cone-v0.0.13-darwin-amd64.zip"
+      sha256 "acddae2fe453402e350bb563e99b7595c3c4e9a4ac0a0a3a542d784c615660ce"
 
       def install
         bin.install "cone"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/cone/releases/download/v0.0.12/cone-v0.0.12-darwin-arm64.zip"
-      sha256 "1830df3caf684d637c58e4a7bdebe07fef605b3fbd1adf800ba63229d0d66522"
+      url "https://github.com/ConductorOne/cone/releases/download/v0.0.13/cone-v0.0.13-darwin-arm64.zip"
+      sha256 "4ca33ca120ee4d87efb7f271540cb435014b6793f7bfc2db571637799ad3e6ed"
 
       def install
         bin.install "cone"
@@ -28,16 +28,16 @@ class Cone < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/cone/releases/download/v0.0.12/cone-v0.0.12-linux-arm64.tar.gz"
-      sha256 "17712c324cee856772733d62a5e7b35706e22d76632449aee7a5c6c69ebc02c5"
+      url "https://github.com/ConductorOne/cone/releases/download/v0.0.13/cone-v0.0.13-linux-arm64.tar.gz"
+      sha256 "32f1c3efbfd0a914237e528b0275f41a9468a931ffcf18e9e394bc7d75e0c89b"
 
       def install
         bin.install "cone"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/cone/releases/download/v0.0.12/cone-v0.0.12-linux-amd64.tar.gz"
-      sha256 "ef098762a5570984540332b9086773bab9ea529188e801d885b688226a66b1b6"
+      url "https://github.com/ConductorOne/cone/releases/download/v0.0.13/cone-v0.0.13-linux-amd64.tar.gz"
+      sha256 "1a2f79b2e5937f9a736f8dc5e8fbf56edf1bd6c9dbda4a21e959000e9c663404"
 
       def install
         bin.install "cone"
