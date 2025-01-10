@@ -5,20 +5,20 @@
 class Cone < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.27"
+  version "0.0.28"
 
   on_macos do
-    on_intel do
-      url "https://github.com/ConductorOne/cone/releases/download/v0.0.27/cone-v0.0.27-darwin-amd64.zip"
-      sha256 "7079c90b15881f1f2480821233d2292cfb86a8406a23458c9e68dde44d199766"
+    if Hardware::CPU.intel?
+      url "https://github.com/ConductorOne/cone/releases/download/v0.0.28/cone-v0.0.28-darwin-amd64.zip"
+      sha256 "20274973c293555c4823069aaf1422b89ec3575284fccc33cb00690dacab48d2"
 
       def install
         bin.install "cone"
       end
     end
-    on_arm do
-      url "https://github.com/ConductorOne/cone/releases/download/v0.0.27/cone-v0.0.27-darwin-arm64.zip"
-      sha256 "d993d18e5106b730bbf8a24c8b65c5be3dd86d85ada7131884b8c9de07df345a"
+    if Hardware::CPU.arm?
+      url "https://github.com/ConductorOne/cone/releases/download/v0.0.28/cone-v0.0.28-darwin-arm64.zip"
+      sha256 "2283bda9d58a00016d6e296ecbab207f9f27a99a2bccbaec6dfffaa131555d5c"
 
       def install
         bin.install "cone"
@@ -27,20 +27,20 @@ class Cone < Formula
   end
 
   on_linux do
-    on_intel do
+    if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/cone/releases/download/v0.0.27/cone-v0.0.27-linux-amd64.tar.gz"
-        sha256 "f90fd54080af4bd9de9bf88595a8b81b5af0112528dc71676e8968f3c93b12d5"
+        url "https://github.com/ConductorOne/cone/releases/download/v0.0.28/cone-v0.0.28-linux-amd64.tar.gz"
+        sha256 "a25797dd7afe5a276eb4c21ede7d1847abf5da5b175c72c45e9a7692418167c1"
 
         def install
           bin.install "cone"
         end
       end
     end
-    on_arm do
+    if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/cone/releases/download/v0.0.27/cone-v0.0.27-linux-arm64.tar.gz"
-        sha256 "43f9d81a64c1167aa483d0b7e5e90ddbd82aebf468564905708356db809597fe"
+        url "https://github.com/ConductorOne/cone/releases/download/v0.0.28/cone-v0.0.28-linux-arm64.tar.gz"
+        sha256 "45b3afa08204be91e4d0a2641137f1864de15ca696bb9899d5e7ec4b1737a16b"
 
         def install
           bin.install "cone"
