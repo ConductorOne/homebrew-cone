@@ -5,20 +5,20 @@
 class Cone < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.28"
+  version "0.0.29"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/cone/releases/download/v0.0.28/cone-v0.0.28-darwin-amd64.zip"
-      sha256 "20274973c293555c4823069aaf1422b89ec3575284fccc33cb00690dacab48d2"
+      url "https://github.com/ConductorOne/cone/releases/download/v0.0.29/cone-v0.0.29-darwin-amd64.zip"
+      sha256 "0f116e192603f0ba666022886445529bf09e4996e3f7083b3b785c6f1d581b32"
 
       def install
         bin.install "cone"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/cone/releases/download/v0.0.28/cone-v0.0.28-darwin-arm64.zip"
-      sha256 "2283bda9d58a00016d6e296ecbab207f9f27a99a2bccbaec6dfffaa131555d5c"
+      url "https://github.com/ConductorOne/cone/releases/download/v0.0.29/cone-v0.0.29-darwin-arm64.zip"
+      sha256 "ef18a275746a97384694fb3573b7c538c9182f5e90134b8fa0504d2a3af49f95"
 
       def install
         bin.install "cone"
@@ -29,8 +29,8 @@ class Cone < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/cone/releases/download/v0.0.28/cone-v0.0.28-linux-amd64.tar.gz"
-        sha256 "a25797dd7afe5a276eb4c21ede7d1847abf5da5b175c72c45e9a7692418167c1"
+        url "https://github.com/ConductorOne/cone/releases/download/v0.0.29/cone-v0.0.29-linux-amd64.tar.gz"
+        sha256 "ea1deddc0a5a6fa34f5ebdb5dbb4edf8c41738a84fb4fce696df2d5103f6eb7b"
 
         def install
           bin.install "cone"
@@ -39,8 +39,8 @@ class Cone < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/cone/releases/download/v0.0.28/cone-v0.0.28-linux-arm64.tar.gz"
-        sha256 "45b3afa08204be91e4d0a2641137f1864de15ca696bb9899d5e7ec4b1737a16b"
+        url "https://github.com/ConductorOne/cone/releases/download/v0.0.29/cone-v0.0.29-linux-arm64.tar.gz"
+        sha256 "040a40a0872fad98157e9e7f8848266e0bc094f1afec55d3bdea25340ab70916"
 
         def install
           bin.install "cone"
