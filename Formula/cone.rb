@@ -5,20 +5,20 @@
 class Cone < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.38"
+  version "0.0.39"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/cone/releases/download/v0.0.38/cone-v0.0.38-darwin-amd64.zip"
-      sha256 "22adb4b5e8b10fcba12a0df8a049cd29665a227b2ada41c1aa5fa0725195fa3b"
+      url "https://github.com/ConductorOne/cone/releases/download/v0.0.39/cone-v0.0.39-darwin-amd64.zip"
+      sha256 "10c887ad281aa8c5bca564901ec16732e3fd5c6bfb33dab3c94e2610b15a3f57"
 
       define_method(:install) do
         bin.install "cone"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/cone/releases/download/v0.0.38/cone-v0.0.38-darwin-arm64.zip"
-      sha256 "2a56e2ff8a78fd397d5134e6d2451a1d5f2a94dd57a8556db0bb21862370d86f"
+      url "https://github.com/ConductorOne/cone/releases/download/v0.0.39/cone-v0.0.39-darwin-arm64.zip"
+      sha256 "c3162a98069141b1c9e207b0d94a0932eb099bdab8d2de54e01cee2d2baaa268"
 
       define_method(:install) do
         bin.install "cone"
@@ -28,15 +28,15 @@ class Cone < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/cone/releases/download/v0.0.38/cone-v0.0.38-linux-amd64.tar.gz"
-      sha256 "5ce34a20fa16f20a7e68c6e0dc0003cf08031e3323e0047e4c94a89b71eefe07"
+      url "https://github.com/ConductorOne/cone/releases/download/v0.0.39/cone-v0.0.39-linux-amd64.tar.gz"
+      sha256 "1f9df12824b4081e26fd2dc218f5841c0902973db1e9352d7c3241a5b6a6f284"
       define_method(:install) do
         bin.install "cone"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/cone/releases/download/v0.0.38/cone-v0.0.38-linux-arm64.tar.gz"
-      sha256 "1d377adb957307831783c045b374b312c07e57a5a737a295e2075a75cc00ca8a"
+      url "https://github.com/ConductorOne/cone/releases/download/v0.0.39/cone-v0.0.39-linux-arm64.tar.gz"
+      sha256 "2a9cbdddf38ea7f3aa6996152944777f8a9fa1dc272b81c4f868725a9b2ee2e9"
       define_method(:install) do
         bin.install "cone"
       end
