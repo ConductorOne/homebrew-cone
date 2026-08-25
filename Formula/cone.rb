@@ -5,22 +5,22 @@
 class Cone < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.41"
+  version "0.0.42-rc.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/cone/releases/download/v0.0.41/cone-v0.0.41-darwin-amd64.zip"
-      sha256 "472ad847c737152f79c248a64f867be28142d63c8531c020caac746586224054"
+      url "https://github.com/ConductorOne/cone/releases/download/v0.0.42-rc.1/cone-v0.0.42-rc.1-darwin-amd64.zip"
+      sha256 "66ceccff71e792858103b9d785c892021b5c448f816459fad2f7c32938bb58b5"
 
-      define_method(:install) do
+      def install
         bin.install "cone"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/cone/releases/download/v0.0.41/cone-v0.0.41-darwin-arm64.zip"
-      sha256 "a4d6a7c109db88e8ae80b2a18997772fd71891dee46b60433198e6a4c72edcd0"
+      url "https://github.com/ConductorOne/cone/releases/download/v0.0.42-rc.1/cone-v0.0.42-rc.1-darwin-arm64.zip"
+      sha256 "882f96f513ad897ec773fe2c83a9b496a31033de97284ff290a1ed07c5d93207"
 
-      define_method(:install) do
+      def install
         bin.install "cone"
       end
     end
@@ -28,16 +28,16 @@ class Cone < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/cone/releases/download/v0.0.41/cone-v0.0.41-linux-amd64.tar.gz"
-      sha256 "1f19158b6e1fa889ab32b73f1a4590d409cfa06cd144bd6f3d7ded1b100159c7"
-      define_method(:install) do
+      url "https://github.com/ConductorOne/cone/releases/download/v0.0.42-rc.1/cone-v0.0.42-rc.1-linux-amd64.tar.gz"
+      sha256 "f550e1f1a9dabe9aadc6c732ec499a417917c4cc4ee49fcf13129ac4e03d1dce"
+      def install
         bin.install "cone"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/cone/releases/download/v0.0.41/cone-v0.0.41-linux-arm64.tar.gz"
-      sha256 "88e0ddea3d8063f96321ca4d875a7e2e6da8542b091acb68cc9deac040e6ac81"
-      define_method(:install) do
+      url "https://github.com/ConductorOne/cone/releases/download/v0.0.42-rc.1/cone-v0.0.42-rc.1-linux-arm64.tar.gz"
+      sha256 "87351e98be58a3f1e053fd536b9fb35b3c5e2eaa2d4914b401ebcc28b6c4fe60"
+      def install
         bin.install "cone"
       end
     end
