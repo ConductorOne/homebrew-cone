@@ -5,20 +5,20 @@
 class Cone < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.43"
+  version "0.0.44"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/cone/releases/download/v0.0.43/cone-v0.0.43-darwin-amd64.zip"
-      sha256 "ab0382d0baae020499f46540fb7b9eaca132dca506dd089cb5bec47fcb371279"
+      url "https://github.com/ConductorOne/cone/releases/download/v0.0.44/cone-v0.0.44-darwin-amd64.zip"
+      sha256 "7668da1e3aa6b8668ca6863d326a49627cf4cd765a607d3bcc410d7db6d10d38"
 
       def install
         bin.install "cone"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/cone/releases/download/v0.0.43/cone-v0.0.43-darwin-arm64.zip"
-      sha256 "fd1a6e724c9b49a9d5e84df768364a55f6e3e1af10cd199b95c634fc89d7ae85"
+      url "https://github.com/ConductorOne/cone/releases/download/v0.0.44/cone-v0.0.44-darwin-arm64.zip"
+      sha256 "0e8c72a2e25475a123cf2e7b1b3dbce3eba0502f2c86b86fe8600f51d2f1e7fb"
 
       def install
         bin.install "cone"
@@ -28,15 +28,15 @@ class Cone < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/cone/releases/download/v0.0.43/cone-v0.0.43-linux-amd64.tar.gz"
-      sha256 "e25a3e10f71b66fa6cba5c0c848be5278fe9fc9933a89c211c5753ec122f04e3"
+      url "https://github.com/ConductorOne/cone/releases/download/v0.0.44/cone-v0.0.44-linux-amd64.tar.gz"
+      sha256 "fd26d7080d801f24003e9c053ff2133a12083369173a5bddd297043de5bd1dd4"
       def install
         bin.install "cone"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/cone/releases/download/v0.0.43/cone-v0.0.43-linux-arm64.tar.gz"
-      sha256 "da848b296410b8cfc3c1d851de054cfba5a549298c28038845da1fcf074a6d31"
+      url "https://github.com/ConductorOne/cone/releases/download/v0.0.44/cone-v0.0.44-linux-arm64.tar.gz"
+      sha256 "52546724f7e4ce24c34b8c2d7c306f2e42f100983131b49178a51da2bf54b478"
       def install
         bin.install "cone"
       end
